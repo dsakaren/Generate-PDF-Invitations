@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body { font-family: sans-serif; }
-        h1 { color: #336699; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>You're Invited, {{ name }}!</h1>
-    <p>We are excited to invite you to our event on <strong>{{ event_date }}</strong>.</p>
-    <p>Please RSVP to {{ email }}</p>
+    <div class="page">
+        <div class="headings">
+            <h1>Dear <span class="invitee">{{ name }}</span>,</h1>
+            <h2>We are excited to invite you to our team-building!</h2>
+            <h3>Please find the schedule for this special day and make sure you come prepared!</h3>
+        </div>
+
+        <div class="flex-wrapper">
+            <div class="schedule">
+                <table class="first-part">
+                    <tr>
+                        <td>11:30 - 12:45</td>
+                        <td>Welcome drink + team lunch</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 - 14:45</td>
+                        <td>Stand-up workshop. No PowerPoint presentations allowed.<br>
+                            <span>"No updates from my side"</span> will <span class="red">NOT</span> be accepted!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:00 - 15:45</td>
+                        <td>Hotel check-in</td>
+                    </tr>
+                    <tr>
+                        <td>16:00 - 18:30</td>
+                        <td><span>Beer Hiking</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="image">
+                <img src="bears-hike.png" alt="bears-hike">
+            </div>
+        </div>
+
+        <div class="flex-wrapper">
+            <div class="image">
+                <img src="karaoke-rock.png" alt="bears-karaoke" class="left">
+            </div>
+
+            <div class="schedule">
+                <table class="second-part right">
+                    <tr>
+                        <td>19:00 - 21:45</td>
+                        <td>Team dinner</td>
+                    </tr>
+                    <tr>
+                        <td>22:00 - 00:45</td>
+                        <td>Party + <span>drinking games</span>! <br> No dress code but please, don't wear flip-flops. </td>
+                    </tr>
+                    <tr>
+                        <td>01:00 - 04:00</td>
+                        <td><span>Karaoke</span>! Participation mandatory! Recording absolutely <span class="red">forbidden!</span></td>
+                    </tr>
+                    <tr>
+                        <td>08:00 - 10:00</td>
+                        <td>Breakfast + check-out. Alka-seltzer will be provided upon request.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

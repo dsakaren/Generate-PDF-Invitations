@@ -1,0 +1,84 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background: #E1F0DA;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headings {
+    margin: 0 auto;
+}
+
+.headings > * {
+    margin: 2rem 0;
+}
+
+
+.schedule {
+    width: 65%;
+    flex: 1;
+}
+
+.image {
+    width: 35%;
+    /*flex: 1;*/
+}
+
+img {
+    max-width: 200px;
+    max-height: 350px;
+    border-radius: 6px;
+}
+
+
+table {
+    border-spacing: 10px 8px;
+}
+
+td {
+    border: 2px solid #1A3263;
+    padding: 10px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.invitee {
+    color: #1A3263;
+}
+
+.red {
+    color: #BF092F;
+    text-decoration: underline;
+}
